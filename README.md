@@ -210,6 +210,17 @@ shardguard registry add-mcp \
 - `--cwd`: Working directory for the command (optional)
 - `--env`: Comma-separated environment variables as KEY=value pairs (optional)
 
+##### Example
+
+```bash
+shardguard registry add-mcp \
+   --registry src/shardguard/mcp_servers/mcp_registry.json \
+   --name "db-operations" \
+   --transport stdio \
+   --desc "Database operations with security controls" \
+   --cmd "python src/shardguard/mcp_servers/database_server.py"
+```
+
 #### HTTP Transport (Streamable)
 
 Add an MCP server that communicates via HTTP:
