@@ -49,21 +49,6 @@
           "*"
         ]
       }
-    },
-    "db-operations": {
-      "transport": "stdio",
-      "tools": {
-        "allow": [
-          "*"
-        ],
-        "deny": [],
-        "rename": {}
-      },
-      "description": "Database operations with security controls",
-      "stdio": {
-        "cmd": "python src/shardguard/mcp_servers/database_server.py",
-        "framing": "jsonl"
-      }
     }
   }
 }
